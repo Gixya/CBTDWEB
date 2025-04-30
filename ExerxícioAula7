@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício – Web 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            color: black;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Exercício – Desenvolvimento Web 1</h1>
+        <nav>
+            <ul>
+                <li><a href="#tabela">Tabela</a></li>
+                <li><a href="#formulario">Formulário</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>MULTIMÍDIA IFSP </h2>
+            <img src="https://moodle.cbt.ifsp.edu.br/pluginfile.php/176496/question/questiontext/143786/1/86073/exercicio_pratico.jpg"
+                alt="IFSP CUBATÃO" width="400">
+            <br><br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6XBTzwfDBJw?si=h8SiDzPero1kpsj6"
+                title="YouTube video player" frameborder="0" allowfullscreen>
+            </iframe>
+        </section>
+
+        <section id="tabela">
+            <h2>Tabela</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome da Fruta</th>
+                        <th>Cor</th>
+                        <th>Preço (por kg) </th>
+                        <th>Disponibilidade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Maçã</td>
+                        <td>Vermelha</td>
+                        <td>R$ 5,00</td>
+                        <td>Sempre disponível</td>
+                    </tr>
+                    <tr>
+                        <td>Banana</td>
+                        <td>Amarela</td>
+                        <td>R$ 3,00</td>
+                        <td>Sempre disponível</td>
+                    </tr>
+                    <tr>
+                        <td>Laraja</td>
+                        <td>Laranja</td>
+                        <td>R$ 4,00</td>
+                        <td>Sazonal</td>
+                    </tr>
+
+                    <tr>
+                        <td>Uva</td>
+                        <td>Roxa</td>
+                        <td>R$ 6,00</td>
+                        <td>Sempre disponível</td>
+                    </tr>
+                    <tr>
+                        <td>Melancia</td>
+                        <td>Verde</td>
+                        <td>R$ 2,50</td>
+                        <td>Sazonal</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="formulario">
+            <h2>Formulário</h2>
+            <form>
+                <label for="nome">Nome: *</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="email">Email: *</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="senha">Senha: *</label><br>
+                <input type="password" id="senha" name="senha" required><br><br>
+
+                <label for="confirmar_senha">Confirmar Senha: *</label><br>
+                <input type="password" id="confirmar_senha" name="confirmar_senha" required><br><br>
+
+                <label for="cor">Cor preferida:</label><br>
+                <select id="cor" name="cor">
+                    <option value="">Selecione uma opção</option>
+                    <option value="vermelho">Vermelho</option>
+                    <option value="verde">Verde</option>
+                    <option value="azul">Azul</option>
+                    <option value="amarelo">Amarelo</option>
+                    <option value="roxo">Roxo</option>
+                    <option value="outra">Outra não exibida</option>
+                </select><br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p> 2025 - Giovanna Ferreira Gonçalves</p>
+    </footer>
+
+</body>
+
+</html>
